@@ -11,6 +11,9 @@ dependencies {
         exclude(group = "io.netty.incubator")
     }
 
+    modCompileOnly(libs.polymer.core)
+    modCompileOnly(libs.polymer.blocks)
+
     api(libs.pack.converter)
 
     implementation(libs.auto.service)
